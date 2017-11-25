@@ -1,3 +1,33 @@
+# Storage Enhanced PixivUtil2
+
+### Restriction
+
+
+1. Must set `%member_id%` in folder name. Default format is `%artist% (%member_id%)` (same as PixivUtil2).
+
+    Also support custom format , but must contain `%member_id%` . For example:
+
+    ```
+    [Settings]
+    filenameformat = %member_id% - %artist%\%urlFilename%
+    filenamemangaformat = %member_id% - %artist%\%urlFilename%
+    filenameinfoformat = %member_id% - %artist% info\%urlFilename%
+    ```
+
+### Feature
+
+1. Save image to same folder even if artist change his name (need member_id in foldername)
+
+### Future
+
+1. Can use db information to rename artist folder name to lastest.
+1. Can use db information to rename all image files (need member_id in filename, format should be strong restricted too)
+
+
+----------------------
+
+Original Readme:
+
 ================================================================================
 = Requirement:                                                                 =
 ================================================================================
